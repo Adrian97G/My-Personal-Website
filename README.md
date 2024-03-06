@@ -13,10 +13,10 @@ This is my personal website where you can see my personal and professional infor
 
 ## :camera_flash: Project Image
 
-![My Project]()
+![My Project](https://github.com/Adrian97G/My-Personal-Website/blob/main/images/My%20personal%20web%20site.png)
 
 ## :link: Link to see the project in action
 
-[Here you can visit my website](https://mywebsite-dev.netlify.app/)
+[Here you can visit my website](https://mywebsite-adrian-dev.netlify.app/)
 
 ## :wave: Greetings!!
