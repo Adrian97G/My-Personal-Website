@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: rgb(0, 0, 0);
+  box-sizing: border-box;
+}  
+
+.video-home {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  line-height: 1px;
+}
+
+.navbar-brand > .material-icons-outlined {
+  font-size: 40px;
+}
+
+.about > .material-icons-outlined {
+  font-size: 50px;
+}
+
+.card > img {
+  height: 250px;
+}
+
+.testimonial > img {
+  height: 50px;
+  width: 50px;
+}
+
+#map {
+  height: 300px;
+}
+
+.nav-menu {
+  color: #FFB612; 
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-menu:hover {
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.btn-arrow {
+  transition: transform 0.5s ease;
+  animation: scale 3s infinite alternate;
+  bottom: 14%;
+  padding-right: 2.3%;
+}
+
+.btn-whatsapp {
+  transition: transform 0.5s ease;
+  animation: scale 3s infinite alternate;
+}
+
+
+@keyframes scale {
+  0% {
+      transform: scale(0.9);
+  }
+  50% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(0.9);
+  }
+}
+
+.btn:hover {
+  background-color: #242424ee;
+}
+
+.btn-costum {
+  background-color: #ffb812a8;
+  color: #ffffffea;
+  border-style: none;
+  border-radius: 4px;
+}
+
+.btn-costum:hover {
+  background-color: #ffb812ce;
+}
+
+.btn-cards {
+  background-color: #ffb812e5; 
+  color: #000000;
+  font-weight: 700;
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
+}
+
+.btn-cards:hover {
+  background-color: #FFB612;
+  color: #000000;
+  transform: scale(1.01);
+}
+
+.effect {
+  transition: transform 0.5s ease;
+  animation: scaleEffect 3s infinite alternate;
+}
+
+.btn-socialnet {
+  transition: transform 0.5s ease;
+  animation: scaleEffect 3s infinite alternate;
+}
+
+@keyframes scaleEffect {
+  0% {
+      transform: scale(0.9);
+  }
+  50% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(0.9);
+  }
+}

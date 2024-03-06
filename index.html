@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/Logo Blanco Redondo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black; box-shadow: 0 1px 10px rgba(255, 209, 81, 0.74);">
+          <div class="container-fluid px-3">
+              <a class="navbar-brand" style="color: #FFB612; font-weight: 600;" href="/">
+                  <img src="/images/Logo Blanco Redondo.png" alt="Logo" width="50" style="padding-bottom: 1%;">
+                  AdrianDev
+              </a>
+              <button
+                  type="button"
+                  class="navbar-toggler"
+                  text-align="center"
+                  style="color: #FFB612;background-color: #FFB612; text-align: center;justify-content: space-around;"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+              >
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="container px-3">
+                  <div class="collapse navbar-collapse" style="text-align: center;" id="navbarSupportedContent">
+                      <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                          <li class="nav-item">
+                              <a class="nav-menu me-lg-3" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-menu me-lg-3" href="#about">About</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-menu me-lg-3" href="#experience">Experience</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-menu me-lg-3" href="#projects">Projects</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-menu me-lg-3" href="#contact">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </div>
+  
+      <!-- End Navbar -->
+
+      <!-- Hero -->
+      <header class="py-5">
+        <div class="container px-5">
+            <div class="row align-items-center">
+                <!-- Columna del video en pantallas pequeñas -->
+                <div class="col-lg-8 col-xl-7 col-xxl-6 order-2 order-lg-1">
+                    <div class="my-5">
+                        <h2 class="text-center fw-bold mb-2" style="color: #e2e2e2;">Hi! I'm Adrian,</h2>
+                        <h2 class="text-center fw-bold mb-2" style="color:#FFB612;" id="typing-text"></h2>
+                        <p class="lead text-center mb-4" style="color:#b8b8b8;">
+                            For me it's a pleasure to have you here.
+                            <br>
+                            Here you can see my professional and personal information.
+                            <br>
+                            <p class="lead text-center mb-4" style="color:#ffffff;">!Where service is my priority, quality a guarantee and innovation a constant¡</p>
+                        </p>
+                        <div class="d-grid gap-3 d-sm-flex justify-content-center">
+                            <button type="button" class="btn-costum"><a href="#about"
+                                onclick="window.open('./Images/English Profile Frontend.pdf')">
+                            </a>Download CV
+                            </button>
+                            <a class="btn btn-outline btn-large" 
+                               style="color: #FFB612; font-weight: 600; border: 1px solid #e2e2e2;" href="#projects"
+                               onclick="location.href='./#contact'">
+                                Contact Info
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Columna del texto -->
+                <div class="col-xl-5 col-xxl-6 justify-content-center order-1 order-lg-2">
+                    <video autoplay muted class="video-home" id="myVideo">
+                        <source src="/Images/video-home.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+
+       <!-- Icono de WhatsApp -->
+      <div class="position-fixed end-0 btn-arrow" style="z-index: 1000;">
+          <a href="/">
+              <img src="/images/flecha-inicio.png" alt="Img-flecha" width="30">
+          </a>
+      </div>
+      <div class="position-fixed bottom-0 end-0 p-1" style="z-index: 1000;">
+          <a href="https://wa.me/3054265021" target="_blank">
+              <img src="/images/Whatsapp.png" alt="Img-WhatsApp" class="btn-whatsapp" width="80">
+          </a>
+      </div>
+      <!-- End Hero -->
+
+      <hr style="color: #FFB612;">
+
+      <main>
+        <!-- About -->
+        <section id="about" class="text-center py-1">
+          <div class="container py-5">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold" style="color: #e2e2e2;">About me</h2>
+              <p class="lead mb-5" style="color:#b8b8b8;">
+                I'm passionate about development, programming, and everything related to design and construction in the fascinating world of technology and the web.
+                <br>
+                I have more than 2 years managing tools on the Frontend side and creating complete web projects of different categories.
+                </p>
+                <p class="lead mb-5" style="color:#b8b8b8;">
+                I have more than 7 years as a business manager in several companies where I have been able to develop a number of skills, qualities and abilities that give added value when working in web development companies, standing out positively in work teams due to my high level of professionalism and commitment to the objectives set by the companies, achieving excellent high-quality results.
+                My work philosophy is: Where service is my priority, quality a guarantee and innovation a constant.
+              </p>
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="row">
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto effect" style="color: #FFB612;">palette</span>
+                </div>
+                <h5 style="color: #e2e2e2;">Web Developer</h5>
+                <p class="mb-0" style="color: #b8b8b8;">
+                  I create beautiful, modern designs optimized for multiple
+                  color modes (light and dark themes).
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto effect" style="color: #FFB612;">work_outline</span>
+                </div>
+                <h5 style="color: #e2e2e2;">Freelancer</h5>
+                <p class="mb-0" style="color: #b8b8b8;">
+                  I have been working as a freelancer for a year, delivering excellent results and meeting the objectives set with great satisfaction.
+                </p>
+              </div>
+              <div class="col-lg-4 mx-auto mb-5">
+                <div class="d-flex mb-5 about">
+                  <span class="material-icons-outlined m-auto effect" style="color: #FFB612;">code</span>
+                </div>
+                <h5 style="color: #e2e2e2;">Frontend Developer</h5>
+                <p class="mb-0" style="color: #b8b8b8;">
+                  I develop responsive, scalable, and fast applications using
+                  the best standards and coding practices.
+                </p>
+              </div>
+            </div>
+          </div>
+
+           <!-- Agregar el video debajo de los párrafos y títulos -->
+          <div class="container mb-5">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h3 class="fw-bold" style="color: #e2e2e2;">Watch My Introduction Video</h3>
+                <p class="lead mb-3" style="color: #b8b8b8;">Here's a short video introducing myself and my experience</p>
+                <div style="max-width: 100%; overflow: hidden; border-radius: 10px;">
+                  <video width="100%" controls oncontextmenu="return false;" controlsList="nodownload" style="display: block;" poster="/images/poster-video.PNG">
+                      <source src="/images/Presentation Video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>                
+              </div>
+            </div>
+          </div>
+
+          <hr style="color: #FFB612;">
+
+          <div class="container py-3 m-1" id="experience">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="fw-bold" style="color: #e2e2e2;">Experience</h2>
+                <p class="lead" style="color: #b8b8b8;">
+                  These are the technologies on which I have focused for more than two years, creating more than 30 projects of different styles and approaches.
+                </p>
+              </div>
+              <div class="col-md-12 py-2">
+                <h2 style="color: #FFB612;">Technologies</h2>
+                <div class="tech-container" style="box-shadow: 0 0 10px rgba(245, 245, 245, 0.3); padding: 20px; margin-top: 20px; display: flex; justify-content: center;">
+                  <div class="row">
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">UX/UI</h4 style="color: #b8b8b8;">
+                      <img class="effect" loading="lazy" src="/images/ux-ui.png" alt="Img-UX/UI" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">HTML</h4>
+                      <img class="effect" loading="lazy" src="/images/html.png" alt="Img-HTML" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">CSS</h4>
+                      <img class="effect" loading="lazy" src="/images/icons8-css.png" alt="Img-CSS" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <H4 style="color: #818181;">Sass</H4>
+                      <img class="effect" loading="lazy" src="/images/icons8-sass.png" alt="Img-Sass" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">Bootstrap</h4>
+                      <img class="effect" loading="lazy" src="/images/icons8-bootstrap.png" alt="Img-Bootstrap" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">Tailwind</h4>
+                      <img class="effect" loading="lazy" src="/images/icons8-tailwind.png" alt="Img-Tailwind" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">Javascript</h4>
+                      <img class="effect" loading="lazy" src="/images/icons8-js.png" alt="Img-JS" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">Node.Js</h4>
+                      <img class="effect" loading="lazy" src="/images/icons8-ts.png" alt="img-TS" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">TypeScript</h4>
+                      <img class="effect" loading="lazy" src="/images/icons8-nodejs.png" alt="Img-NodeJs" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">Vue.Js</h4>
+                      <img class="effect" loading="lazy" src="/images/icons8-vuejs.png" alt="Img-Vue" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">Vuetify</h4>
+                      <img class="effect" loading="lazy" src="/images/icons8-vuetify.png" alt="Img-Vuetify" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                    <div class="col-md-2 pt-4 mb-4">
+                      <h4 style="color: #818181;">Git</h4>
+                      <img class="effect" loading="lazy" src="/images/icons8-git.png" alt="Img-Vue" style="width: 60px;height: 60px;margin-right: 10px;">
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- End About -->
+
+        <hr style="color: #FFB612;">
+
+        <!-- Projects -->
+        <section id="projects" class="text-center py-1 m-0 p-0">
+          <div class="container py-3 m-0 p-0">
+            <div class="row justify-content-center">
+              <h2 class="fw-bold" style="color: #e2e2e2;">Projects</h2>
+              <p class="lead mb-5" style="color: #b8b8b8;">Here you can see some of my projects created with technologies focused on frontend development.</p>
+            </div>
+          </div>
+
+            <div class="row justify-content-center align-content-center">
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/dashboard bootstrap1.png" alt="Img-Dashboard">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Dashboard Bootstrap)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Bootstrap</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      This is a dashboard where you can see detailed information about the control of several users registered on the platform (Static example).
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Dashboard-Bootstrap" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://dashboard-bootstrap-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/devbook3.png" alt="Img-Social-Network">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (App-SocialNetwork)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Vue.JS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Bootstrap</div>
+                    </div>
+                    <p class="card-text">
+                      Welcome to devbook, a social media model where you can upload your photos, videos, information of interest and communicate with your family and friends.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/App-SocialNetwork" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://app-devbook.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Countries App.PNG" alt="Img-Countries-App">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (App-Countries)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Vue.Js</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">TypeScript</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Tailwind</div>
+                    </div>
+                    <p class="card-text">
+                      The Countries App is a Vue.js application that allows users to explore detailed information about various countries. Users can enjoy a seamless browsing experience to discover key facts about different nations.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Countries-App" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://countries-app-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Spotify-clone.PNG" alt="Img-Spotify">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Spotify Clone)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      This project is a clone Spotify (Practice).
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Spotify-Clone" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://clone-spotify-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/ecommerce4.jpg" alt="Project 1">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (E-commerce)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                    </div>
+                    <p class="card-text">
+                      This is an E-commerce where you can see several categories of clothing and accessories that may interest you.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/E-commerce" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://my-ecommerce-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/dashboard2.jpg" alt="Img-Dashboard">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Dashboard JS)</h5>            
+                      <div class="mb-2">
+                        <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                        <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                        <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      This project is an interactive dashboard designed to provide a quick and effective overview. It is built with an intuitive user interface for the general audience.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/dashboard" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://my-dashboard1.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/food page5.png" alt="Food-Page">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Food Page)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      This is a page with corresponding information about the services and information of a restaurant.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Food-Page" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://food-page-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Calculadora6.PNG" alt="Img-Calculator">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Calculator-LocalStorage)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      This is a simple calculator app that allows users to perform basic operations such as addition, subtraction, multiplication and division.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Calculator-LocalStorage-" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://calculator-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/figma7.png" alt="Img-Figma">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (App Prototype)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">UX/UI</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Figma</div>
+                    </div>
+                    <p class="card-text">
+                      This is a prototype of a web application, created with Figma
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                            <button type="button" class="btn-cards rounded" onclick="window.open('https://www.canva.com/design/DAF0WyB2iLo/Ya0BBEP6W3scQAuogmiGmg/view?utm_content=DAF0WyB2iLo&utm_campaign=designshare&utm_medium=link&utm_source=editor')">See Image</button>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/calendar8.png" alt="Img-Calendar">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Calendar)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      This project is a static page of a basic and simple calendar.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Calendar" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://calendar-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/chat-vue9.png" alt="Img-Chat-vue">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (App-Chat)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Vue.Js</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Tailwind</div>
+                    </div>
+                    <p class="card-text">
+                      Welcome to Chat App, A chat app model in which an example of communication can be demonstrated through a web application.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Web-Chat-Aplication" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://chats-vue-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/card10.png" alt="Img-Card">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Profile Card)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Bootstrap</div>
+                    </div>
+                    <p class="card-text">
+                      This is a Profile card of Social Network.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Profile-Card" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Info Page11.png" alt="Img-Info-Page">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Information Page)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Bootstrap</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      This is an informative page to review in detail the services offered by this web agency and contact information. (Static example).
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Info-Page" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://info-page-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Pomodoro12.PNG" alt="Img-Pomodoro">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Pomodoro)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      This is a Pomodoro App where you can organise your time to achieve productivity and order in your tasks.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Pomodoro" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://pomodoro-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Movies Page13.PNG" alt="Img-Movies">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Movies Page)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      Welcome to the XYZ Movies website, your destination to discover and enjoy the best movies of all time.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Movies-Page" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://movies-page-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/mi web site14.png" alt="Img-web-Site">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Portfolio Example)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      Welcome to my personal portfolio! Here you can find some of the projects I have worked on and contact information.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/My-Web-Site" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://carrusel-images-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Netflix15.png" alt="Img-Clone-Netflix">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Netflix Clone)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                    </div>
+                    <p class="card-text">
+                      This is a Netflix clone (Work Practice)
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Netflix-Clone" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://netflix-clone-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/ToDo-Image16.PNG" alt="Img-ToDo">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (To-Do List)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      Keep your tasks organized with our To Do List app! Built with HTML, CSS, and JS, this app allows you to keep track of your daily tasks and mark them as completed when you're done.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/To-Do-Page" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://to-do-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Portfolio Vuuetify17.png" alt="Img-Portfolio">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Portfolio Vue.Js)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Vue.Js</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Vuetify</div>
+                    </div>
+                    <p class="card-text">
+                      Welcome to Web portfolio highlighting skills, projects and experience of a professional company.!!
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/portfolio-vuetify" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://portfolio-vuetify.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/weatherapp18.png" alt="Img-Weather">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (App-Weather)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">Vue.JS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                    </div>
+                    <p class="card-text">
+                      Welcome to Weather App, here you can see the weather of your city or whatever that you want see !!
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/WeatherApp" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://weather-app-adrian.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Web Page19.PNG" alt="Img-Web-page">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Form Page)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">JS</div>
+                    </div>
+                    <p class="card-text">
+                      This is a static registration page project, created with HTML, CSS and JS.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Web-Form" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://web-form-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 mb-4">
+                <div class="card h-100 shadow-lg border-0 bg-light">
+                  <img class="card-img-top" loading="lazy" src="images/Web Company20.png" alt="Img-Web-Company">
+                  <div class="card-body p-4">
+                    <h5 class="card-title mb-3 fw-bold">My Project (Company Page)</h5>
+                    <div class="mb-2">
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">HTML</div>
+                      <div class="badge rounded-pill" style="background-color: #ffb812f6;color: #000000;">CSS</div>
+                    </div>
+                    <p class="card-text">
+                      This is a company website where they show us the services about the technological world.
+                    </p>
+                  </div>
+                  <div class="card-footer bg-transparent p-2 d-flex justify-content-center">
+                    <div class="mx-2">
+                        <a href="https://github.com/Adrian97G/Web-Site-Company" target="_blank" style="text-decoration: none;">
+                            <button type="button" class="btn-cards rounded">Github</button>
+                        </a>
+                    </div>
+                    <div class="mx-3">
+                        <a href="https://web-site-company-adrian-dev.netlify.app" target="_blank">
+                            <button type="button" class="btn-cards rounded">See Project</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Projects -->
+
+        <hr style="color: #FFB612;">
+
+        <!-- Contact -->
+        <section id="contact" class="text-center py-5">
+          <div class="container py-1">
+              <div class="row justify-content-center">
+                  <h2 class="fw-bold" style="color: #e2e2e2;">Contact me</h2>
+                  <p class="lead mb-5" style="color: #b8b8b8;">
+                    Here is my personal and professional information with the respective social networks where you can observe in a little more detail all the skills and qualities that I have to offer in the work field.
+                    <br>
+                    ¡I will be attentive to your valuable message!
+                    <br>
+                    Greetings!!
+                  </p>
+              </div>
+          </div>
+      
+      
+          <div class="container mb-5">
+              <div class="row align-items-center">
+      
+
+                  <div class="col-lg-6">
+                      <div class="row">
+ 
+                          <div class="col-md-6 mb-4">
+                              <img src="/images/Logo Blanco Redondo.png" style="width: 300px; height: auto;" alt="Img-Logo" class="img-fluid">
+                          </div>
+
+                          <div class="col-md-6 mb-4">
+                              <img src="/images/Image Adrian.jpeg" style="border-radius: 50%; width: 300px; height: auto;" alt="Img-Adrian" class="img-fluid">
+                          </div>
+                      </div>
+                  </div>
+      
+                  <!-- Columna para la información de contacto -->
+                  <div class="col-lg-6">
+                      <div class="mb-5">
+                          <h3 class="text-uppercase mb-2" style="color: #FFB612;">Location</h3>
+                          <p class="lead mb-0" style="color: #818181;">Manizales, Caldas - Colombia</p>
+                      </div>
+                      <div class="mb-5">
+                          <h3 class="text-uppercase mb-2" style="color: #FFB612;">Phone</h3>
+                          <p class="lead mb-0" style="color: #818181;">#57 3054265021</p>
+                      </div>
+                      <div class="mb-5">
+                          <h3 class="text-uppercase mb-2" style="color: #FFB612;">Email</h3>
+                          <p class="lead mb-0" style="color: #818181;">ospinaadrian784@gmail.com</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-lg-6">
+                      <ul class="list-inline">
+                          <li class="list-inline-item"><a href="https://www.facebook.com/adrian.ospina.524?locale=es_LA" target="_blank"><img class="btn-socialnet" src="/images/facebook.png" alt="Facebook"></a></li>
+
+                          <li class="list-inline-item"><a href="https://www.linkedin.com/in/adrian-ospina/" target="_blank"><img class="btn-socialnet" src="/images/linkedin.png" alt="Linkedin"></a></li>
+
+                          <li class="list-inline-item"><a href="https://github.com/Adrian97G" target="_blank"><img class="btn-socialnet" src="/images/github.png" alt="Github"></a></li>
+
+                          <li class="list-inline-item"><a href="https://wa.me/3054265021" target="_blank"><img class="btn-socialnet" src="/images/Whatsapp.png" alt="WhatsApp" width="50"></a></li></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+        
+
+    <hr style="color: #FFB612;">
+
+    <footer class="text-center py-1">
+      <div class="container px-5 mb-2" style="color: #b8b8b8;">Copyright &copy; Adrian Dev.</div>
+    </footer>
+  
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
